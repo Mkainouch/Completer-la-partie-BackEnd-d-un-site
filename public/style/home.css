@@ -1,0 +1,461 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#topNav button, footer .contact .leftDiv div button {
+  padding: 5px 12px;
+  font-size: 18px;
+  background-color: #A98B69;
+  border-radius: 2px;
+  border: 2px solid #A98B69;
+  color: #fff;
+  font-family: "Playfair" Display;
+}
+
+#topNav button:hover, footer .contact .leftDiv div button:hover {
+  color: #A98B69;
+  background-color: #fff;
+  border: 2px solid #A98B69;
+}
+
+#topNav .logo {
+  height: 50px;
+  color: #fff;
+  font-family: "Merienda One", cursive;
+  font-size: 24px;
+  padding: 12px 0 0 24px;
+}
+
+#topNav .logo span {
+  font-family: "Roboto", sans-serif;
+  color: #A98B69;
+  font-weight: bold;
+}
+
+#checkNav {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  #checkNav:checked ~ #topNav {
+    display: block;
+  }
+  #checkNav:checked ~ #checkNavBtn {
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
+  }
+}
+
+#checkNavBtn {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  #checkNavBtn {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    background-color: #000;
+    border-bottom: 3px solid #A98B69;
+    z-index: 50;
+  }
+}
+
+#checkNavBtn img {
+  margin: 24px 0 24px 24px;
+}
+
+#topNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  border-bottom: 3px solid #A98B69;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  #topNav {
+    display: none;
+    text-align: center;
+    padding: 72px 0 32px 0;
+    width: 70%;
+    border-right: 3px solid #A98B69;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+}
+
+@media (max-width: 767px) {
+  #topNav .logo {
+    background-color: black;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+}
+
+#topNav ul {
+  list-style: none;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 24px 0;
+}
+
+@media (max-width: 767px) {
+  #topNav ul {
+    display: block;
+    padding: 32px 0 0 0;
+  }
+}
+
+#topNav ul li {
+  margin-right: 15%;
+}
+
+#topNav ul li a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: bold;
+}
+
+#topNav ul li a:hover {
+  color: #A98B69;
+}
+
+@media (max-width: 767px) {
+  #topNav ul li {
+    margin: 0 0 24px 0;
+  }
+}
+
+#topNav button {
+  border: #000;
+  background-color: black;
+}
+
+#topNav button:hover {
+  color: #fff;
+  background-color: #A98B69;
+  border: none;
+}
+
+.sideNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  margin-top: 200px;
+  z-index: 10;
+}
+
+.sideNav .themeContainer {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-left: none;
+  border-radius: 4px;
+  padding: 8px;
+  display: none;
+}
+
+.sideNav .themeContainer .theme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 8px;
+}
+
+.sideNav .themeContainer .theme .color {
+  height: 32px;
+  width: 120px;
+  border: 2px solid #A98B69;
+  border-radius: 4px;
+  margin-right: 4px;
+}
+
+.sideNav .themeContainer .theme .del {
+  height: 32px;
+  width: 32px;
+  background-color: #fff;
+  border: 2px solid #A98B69;
+  border-radius: 4px;
+}
+
+.sideNav .themeContainer .theme .del .moins {
+  height: 4px;
+  width: 12px;
+  background-color: #000;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 30%;
+}
+
+.sideNav .themeContainer .theme input {
+  margin-right: 4px;
+  font-size: 16px;
+  border: 2px solid #A98B69;
+}
+
+.sideNav .themeContainer .theme .add {
+  height: 32px;
+  width: 32px;
+  background-color: #fff;
+  border: 2px solid #A98B69;
+  border-radius: 4px;
+}
+
+.sideNav .themeContainer .theme .plus1 {
+  height: 4px;
+  width: 12px;
+  background-color: #000;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 30%;
+}
+
+.sideNav .themeContainer .theme .plus2 {
+  height: 12px;
+  width: 4px;
+  background-color: #000;
+  position: relative;
+  top: 37%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 42.5%;
+}
+
+.sideNav .themeContainer .theme #color1 {
+  background-color: #16a085;
+}
+
+.sideNav .themeContainer .theme #color2 {
+  background-color: #2980b9;
+}
+
+.sideNav .themeContainer .theme #color3 {
+  background-color: #c0392b;
+}
+
+.sideNav .themeContainer .theme #color4 {
+  background-color: #f39c12;
+}
+
+.sideNav .clickable {
+  height: 120px;
+  width: 8px;
+  background-color: #000;
+  border: 2px solid #fff;
+  border-left: none;
+  border-radius: 4px;
+}
+
+.sideNav .clickable:hover {
+  width: 24px;
+}
+
+.sideNav .color {
+  height: 32px;
+  width: 130px;
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 0 0 24px 0;
+}
+
+footer .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 40px 10% 40px 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18px;
+}
+
+footer .contact .leftDiv {
+  width: 70%;
+}
+
+footer .contact .leftDiv div {
+  padding: 8px 0 8px 0;
+}
+
+footer .contact .leftDiv div input {
+  padding: 5px 12px;
+  font-family: "Playfair" Display;
+  font-size: 18px;
+  border: none;
+}
+
+@media (max-width: 767px) {
+  footer .contact .leftDiv {
+    width: 100%;
+  }
+}
+
+footer .contact .rightDiv {
+  padding: 8px 0 8px 16px;
+}
+
+footer .contact .rightDiv div {
+  padding: 8px 0;
+}
+
+footer .contact .rightDiv ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+footer .contact .rightDiv ul li {
+  padding-left: 8px;
+}
+
+footer .contact .rightDiv ul li img {
+  height: 30px;
+  width: 30px;
+}
+
+@media (max-width: 767px) {
+  footer .contact .rightDiv {
+    width: 100%;
+    padding: 16px 0 8px 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  footer .contact {
+    display: block;
+  }
+}
+
+footer .links {
+  padding: 16px 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+}
+
+footer .links div a {
+  text-decoration: none;
+  color: #000;
+}
+
+footer .links div a:hover {
+  color: #A98B69;
+}
+
+footer .footerButtom {
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer .footerButtom p {
+  font-size: 12px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #352623;
+  height: 100%;
+}
+
+header .imgDiv {
+  width: 100%;
+  margin: 0 auto;
+  background: url(../imgs/black-framed.jpg);
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 767px) {
+  header .imgDiv .discriptiondiv {
+    width: 94%;
+    margin: 300px auto;
+  }
+}
+
+@media (min-width: 768px) {
+  header .imgDiv .discriptiondiv {
+    width: 70%;
+    margin-top: 360px;
+    float: right;
+    margin-right: 0%;
+  }
+}
+
+@media (min-width: 991px) {
+  header .imgDiv .discriptiondiv {
+    margin-top: 400px;
+    width: 60%;
+    margin-right: 15%;
+  }
+}
+
+@media (min-width: 1200px) {
+  header .imgDiv .discriptiondiv {
+    margin-top: 400px;
+    width: 40%;
+    margin-right: 40%;
+  }
+}
+
+header .imgDiv .discriptiondiv p {
+  padding: 16px 0;
+  color: #fff;
+  font-family: "Playfair" Display;
+  font-size: 40px;
+}
+
+header .imgDiv .discriptiondiv p i {
+  color: #A98B69;
+}
+
+header .imgDiv .discriptiondiv .lastParagraph {
+  font-size: 20px;
+  color: grey;
+}
+
+section {
+  height: 500px;
+}
+/*# sourceMappingURL=home.css.map */

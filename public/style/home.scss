@@ -1,0 +1,53 @@
+@import "_nav&footer";
+header{
+    display: flex;
+    background-color: #352623;
+    height: 100%;
+    .imgDiv{
+        width: 100%;
+        margin:0 auto;
+        background: url(../imgs/black-framed.jpg);
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+        .discriptiondiv{
+            @media #{$maxMobile} {
+                width: 94%;
+                margin: 300px auto;
+            }
+            @media #{$minSmall} {
+                width: 70%;
+                margin-top: 360px;
+                float: right;
+                margin-right: 0%;
+            }
+            @media #{$minMedium} {
+                margin-top: 400px;
+                width: 60%;
+                margin-right: 15%;
+            }
+            @media #{$minLarge} {
+                margin-top: 400px;
+                width: 40%;
+                margin-right: 40%;
+            }
+            p{
+                padding: 16px 0;
+                color: $thirdColor;
+                font-family: $fontFamily;
+                font-size: 40px;
+                i{
+                    color: $mainColor;
+                }
+            }
+            .lastParagraph{
+                font-size: 20px;
+                color:grey;
+            }
+        }
+    }
+    
+}
+section{
+    height: 500px;
+}

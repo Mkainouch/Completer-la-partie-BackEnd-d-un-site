@@ -1,0 +1,682 @@
+@import "_nav&footer";
+section{
+    padding-bottom: 200px;
+    background-color: $mainColor;
+    .header{
+        height: 240px;
+        background-color: black;
+        margin: 0 7%;
+        @media #{(max-width: 400px)} {
+            height: 180px;            
+        }
+        h3{
+            font-family: $fontFamily2;
+            color: $thirdColor;            
+            font-size: 48px;
+            padding: 120px 0 0 32px;
+            @media #{(max-width: 400px)} {
+                font-size: 32px;
+                padding: 84px 0 0 32px;
+            }
+            @media #{($maxMobile)} {
+                padding: 89px 0 0 32px;
+            }
+        }
+    }
+
+ // ================================ gallery =================================
+    .gallery{
+        margin: 0px 7%;
+        .filter{
+            height: 32px;
+            border-bottom: 1px solid $fourthColor;
+            margin-bottom: 16px;
+            padding: 0;
+            div{
+                font-family: $fontFamily2;
+                font-weight: bold;
+                font-size: 18px;
+                padding: 0 100px 0 32px;
+            }
+        }
+        div{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 100%;
+            padding: 24px 0; 
+            div{
+                width: 400px;
+                div{
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    span{
+                    font-family: $fontFamily2;
+                    font-size: 20;
+                    font-weight: bold;
+                    color: $mainColor;
+                    background: black;
+                    }
+                    p{
+                    font-size: 16px;
+                    padding: 8px 0 0 0;
+                    }
+                }
+                div{
+                    width: 100%;
+                    text-align: center;
+                    img{
+                        height: 160px;
+                        width: 290px;
+                        padding: 16px 0;
+                        // @media #{$maxMobile} {
+                        //     padding: 5px 0;
+                        // }
+                    } 
+                }
+                &:hover{
+                    border-radius: 8px;
+                    box-shadow: 0 0 4px 4px rgba($color: #000000, $alpha: .1);
+                    div{
+                        box-shadow: none;
+                    }
+                    div{
+                        box-shadow: none;
+                        img{
+                            padding: 11px;
+                            height: 170px;
+                            width: 300px;
+                            transition: 0.5s all ease-in-out;
+                        }
+                    }
+                    
+                }
+                
+            }
+        }
+        // @media #{$minSmall}{
+        //     margin: 0 3%;
+        // }
+        // @media #{$minMedium}{
+        //     margin: 0 5%;
+        // }
+        // @media #{$minLarge}{
+        //     margin: 0 7%;
+        // }
+    }
+ }
+    .homeSection{
+        height: 500px;
+    }
+// ================================================================================
+
+// ======================== sliders ===============================================
+#s-r-container{
+    display:none;
+    position: absolute;
+    top: 70px;
+    height: 100%;
+    width: 100%;
+
+    #slideContainer{
+        // display:none;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background-color: rgba($color: #000000, $alpha: .9);
+        justify-items: center;
+        button{
+            color: white;
+            background-color:rgba($color: #000000, $alpha: .0);
+            font-weight: bold;;
+            border:2px solid $mainColor;
+            border-radius: 12px;
+            padding: 2px 8px;
+            margin: 24px 0 0px 16px;
+            &:hover{
+                background-color: red;
+                border:2px solid red;
+            }
+        }
+        #sildeShow{
+            background-image: url();
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            div{
+                display: flex;
+                width: 100%;
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+                #img2{
+                    position: absolute;
+                    right: 0;
+                }
+            }
+            button{
+                @extend %buttonStyle;
+                font-size: 40px;
+                position: absolute;
+                right: 100px;
+                bottom: 150px;
+                @media #{$maxMobile} {
+                    font-size: 16;
+                    right: 16px;
+                    bottom: -16px;
+                }
+                @media #{$minSmall} {
+                    font-size: 20px;
+                    right: 24px;
+                    bottom: 20px;
+                }
+                @media #{$minMedium} {
+                    font-size: 24px;
+                    right: 32px;
+                    bottom: 32px;
+                }
+                @media #{$minLarge} {
+                    font-size: 32px;
+                    right: 50px;
+                    bottom: 20px;
+                }
+            }
+            @media #{$maxMobile} {
+                width: 100%;
+                height: 30%;
+                margin-top: 50%;
+                transform: translateY(-50%);
+                border: none;
+            }
+            @media #{$minSmall} {
+                width: 100%;
+                height: 45%;
+                margin-top: 50%;
+                transform: translateY(-80%);
+                border: none;
+            }
+            @media #{$minMedium} {
+                width: 100%;
+                height: 60%;
+                margin-top: 50%;
+                transform: translateY(-80%);
+            }
+            @media #{$minLarge} {
+                width: 96%;
+                height: 76%;
+                margin: 580px auto;
+            }
+        }
+    }
+
+    // ==========================================================
+
+    // ======================= reservation ======================
+    #reservationContainer{
+        display:none;        
+        height: 100%;
+        width: 100%;
+        background-color: $thirdColor;
+        justify-items: center;
+        .reservation_form{
+            width: 1200px;
+            margin:8px auto;
+            #imgs{
+                width: 360px; 
+                height: 200px; 
+                @media #{(max-width: 400px)} {
+                    width: 90%;
+                    height: 160px;
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                }
+            }
+            input{
+                font-size: 24px;
+                font-family: $navFontFamily;
+                border: none ;
+                border-bottom: 2px solid $mainColor;
+                background-color:$thirdColor;
+                border-radius:4px ;
+                width: 90%;
+                @media #{$minMedium} {
+                    width: 90%;
+                }
+                @media #{$maxMobile} {
+                    width: 100%;
+                    margin-bottom: 16px;
+                }
+            }
+            input:focus{
+                outline: none;
+            }
+            .fullName{
+                display: flex;
+                margin: 16px;
+                width: 100%;
+                div{
+                    width: 50%;
+                    @media #{$maxMobile} {
+                        margin-bottom: 16px;
+                        width: 90%;
+                    }
+                    div{
+                        width: 100%;
+                        margin-bottom: 0px;
+                    }
+                }
+                @media #{$maxMobile} {
+                  display: block;
+                }
+                @media #{$minSmall} {
+                }
+            }
+            .birthday{
+                width: 100%;
+                margin: 16px;
+                div{
+                    width: 100%;
+                }
+                @media #{$maxMobile} {
+                    width: 90%;
+                    margin: 0 0 0 16px;
+
+                }
+               
+                input{
+                    @media #{$minSmall} {
+                        width: 95%;
+                        
+                    }
+                }
+            }
+            .city{
+                display: flex;
+                margin: 16px;
+                width: 100%;
+                div{
+                    width: 50%;
+                    div{
+                        width: 100%;
+                        @media #{$maxMobile} {
+                            margin-bottom: 0px; 
+                        }
+                    }
+                    @media #{$maxMobile} {
+                        width: 90%;
+                        margin-bottom: 16px;
+                    }
+                }
+                @media #{$maxMobile} {
+                    display: block;
+                }
+            }
+
+            .date{
+                display: flex;
+                margin: 16px;
+                .DateDePrise{
+                    width: 50%;
+                    display: flex;
+                    div{
+                        width: 50%;
+                        div{
+                            width: 100%;
+                            @media #{$maxMobile} {
+                                margin-bottom: 0px; 
+                            }
+                        }
+                        @media #{$maxMobile} {
+                            width: 100%;  
+                            margin-bottom: 16px; 
+                        }
+                    }
+                    @media #{$maxMobile} {
+                        width: 100%;
+                        display: block;
+                    }
+                    @media #{$minSmall} { 
+                        width: 100%;
+                    }
+                    // @media #{$minLarge} {
+                    //     width: 92%;
+                    // }
+                    
+                }
+
+                .dateDeRetour{
+                    width: 50%;
+                    display: flex;
+                    div{
+                        width: 50%;
+                        div{
+                            width: 100%;
+                            @media #{$maxMobile} {
+                                margin-bottom: 0px; 
+                            }
+                        }
+                        @media #{$maxMobile} {
+                            width: 100%;                      
+                            margin-bottom: 16px;
+                        }
+                    }
+                    @media #{$maxMobile} {
+                        width: 100%;
+                        display: block;
+                    }
+                    @media #{$minSmall} {
+                        width: 100%;
+                    }
+                }
+                @media #{$maxMobile} {
+                    width: 90%;
+                    display: block;
+                }
+                @media #{$minSmall} {
+                    width: 100%;
+                    display: block;
+                }
+                @media #{$minMedium} {
+                    display: block;
+                }
+                @media #{$minLarge} {
+                    width: 98%;
+                    display: flex;
+                }
+            }
+            
+            .age{
+                display: flex;
+                padding: 16px;
+                margin: 16px;
+                div{
+                    width: 50%;
+                    div{
+                        width: 100%;
+                        padding: 8px;
+                    }
+                    // @media #{$maxMobile} {
+                    //     width: 100%;
+                    // }
+                }
+                // @media #{$minSmall} {
+                //     width: 100%;
+                //     padding: 5px 0px;
+                // }
+                // @media #{$maxMobile} {
+                //     display: block;
+                //     width: 100%;
+                //     padding:0;
+                //     margin: 0;
+                // }
+            }
+
+            #reservationConfBtn{
+                @extend %buttonStyle;
+                font-size: 30px;
+                float: right;
+                margin-right: 32px;
+                @media #{$maxMobile} {
+                    font-size: 24px;
+                    margin-right: 24px;
+                }
+                @media #{(max-width: 400px)} {
+                    font-size: 16px;
+                    margin-right: 16px;
+                }
+            }
+
+            label{
+                font-size: 18px;
+                font-family: $fontFamily;
+            }
+            
+            @media #{$maxMobile} {
+                width: 90%;
+                padding-bottom: 150px;
+                // margin: 120px 10%;
+                // padding: 40px 8px;
+            }
+            @media #{$minSmall} {
+                width: 90%;
+                // margin: 0 10%;
+                // padding: 0 8px;
+            }
+            @media #{$minMedium} {
+                width: 94%;
+            }
+            @media #{$minLarge} {
+                width: 1200px;
+            }
+           
+        }
+        // reservation colse button
+        button {
+            
+            color: $mainColor;
+            background-color:rgba($color: #000000, $alpha: .0);
+            font-weight: bold;;
+            border:2px solid $mainColor;
+            border-radius: 12px;
+            padding: 2px 8px;
+            margin: 32px 0 0 16px;
+            &:hover{
+                color: white;
+                background-color: red;
+                border:2px solid red;
+            }
+        }
+    }
+}
+
+// =========================================================================
+
+#reservationConfirmationContainer{
+    display:none;        
+    height: 100%;
+    width: 100%;
+    background-color: $thirdColor;
+    .reservationConfirmtion_form{
+        // width: 200px;
+        margin:8px auto;
+        // background-color: $thirdColor;
+        // justify-content: space-around;
+        h1{
+            padding: 32px 0;
+        }
+        #imgC{
+            width: 360px; 
+            height: 200px; 
+            @media #{(max-width: 400px)} {
+                width: 90%;
+                height: 160px;
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+        }
+       .output{
+           font-size: 18px;
+           input{
+               color: #000000;
+               font-size: 20px;
+               font-weight: bold;
+               border:none;
+               background-color: white;
+           }
+       }
+        .fullName{
+            display: flex;
+            margin: 16px;
+            width: 100%;
+            div{
+                width: 50%;
+                @media #{$maxMobile} {
+                    margin-bottom: 16px;
+                    width: 90%;
+                }
+                div{
+                    width: 100%;
+                    margin-bottom: 0px;
+                }
+            }
+            @media #{$maxMobile} {
+              display: block;
+            }
+            @media #{$minSmall} {
+            }
+        }
+        .birthdayC{
+            width: 100%;
+            margin: 16px;
+            display: flex;
+            div{
+                width: 100%;
+            }
+            div{
+                width: 50%;
+                @media #{$maxMobile} {
+                    margin-bottom: 16px;
+                    width: 90%;
+                }
+                div{
+                    width: 100%;
+                    margin-bottom: 0px;
+                }
+            }
+            @media #{$maxMobile} {
+              display: block;
+            }
+            @media #{$minSmall} {
+            }
+        }
+        .city{
+            display: flex;
+            margin: 16px;
+            width: 100%;
+            div{
+                width: 50%;
+                div{
+                    width: 100%;
+                    @media #{$maxMobile} {
+                        margin-bottom: 0px; 
+                    }
+                }
+                @media #{$maxMobile} {
+                    width: 90%;
+                    margin-bottom: 16px;
+                }
+            }
+            @media #{$maxMobile} {
+                display: block;
+            }
+        }
+
+        .DateDePrise{
+            width: 50%;
+            display: flex;
+            margin: 16px;
+            div{
+                width: 50%;
+                div{
+                    width: 100%;
+                    @media #{$maxMobile} {
+                        margin-bottom: 0px; 
+                    }
+                }
+                @media #{$maxMobile} {
+                    width: 100%;  
+                    margin-bottom: 16px; 
+                }
+            }
+            @media #{$maxMobile} {
+                width: 100%;
+                display: block;
+            }
+            @media #{$minSmall} { 
+                width: 100%;
+            }
+            // @media #{$minLarge} {
+            //     width: 92%;
+            // }
+            
+        }
+
+        .dateDeRetour{
+            width: 50%;
+            display: flex;
+            margin: 16px;
+            div{
+                width: 50%;
+                div{
+                    width: 100%;
+                    @media #{$maxMobile} {
+                        margin-bottom: 0px; 
+                    }
+                }
+                @media #{$maxMobile} {
+                    width: 100%;                      
+                    margin-bottom: 16px;
+                }
+            }
+            @media #{$maxMobile} {
+                width: 100%;
+                display: block;
+            }
+            @media #{$minSmall} {
+                width: 100%;
+            }
+        }
+        .numDeJours{
+            margin: 16px;
+            margin-bottom: 64px;
+        }
+        .btns{
+            margin: 16px;
+            #confirmationBtn{
+                @extend %buttonStyle;
+                font-size: 24px;
+                float: right;
+                margin-right: 32px;
+                @media #{$maxMobile} {
+                    font-size: 24px;
+                    margin-right: 24px;
+                }
+                @media #{(max-width: 400px)} {
+                    font-size: 16px;
+                    margin-right: 16px;
+                }
+            }
+            #modifyBtn{
+                @extend %buttonStyle;
+                font-size: 24px;
+                margin-right: 32px;
+                @media #{$maxMobile} {
+                    font-size: 24px;
+                    margin-right: 24px;
+                }
+                @media #{(max-width: 400px)} {
+                    font-size: 16px;
+                    margin-right: 16px;
+                }
+            }
+        }
+        @media #{$maxMobile} {
+            width: 90%;
+            padding-bottom: 150px;
+            // margin: 120px 10%;
+            // padding: 40px 8px;
+        }
+        @media #{$minSmall} {
+            width: 90%;
+            // margin: 0 10%;
+            // padding: 0 8px;
+        }
+        @media #{$minMedium} {
+            width: 94%;
+        }
+        @media #{$minLarge} {
+            width: 1000px;
+        }
+    }
+}

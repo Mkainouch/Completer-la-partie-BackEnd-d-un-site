@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/reservations.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="checkNav">
+        <label id="checkNavBtn" for="checkNav"><img src="../icons/iconMenu.png" alt="" width="24px"></label>
+        <div id="topNav">
+                <div class="logo">
+                <p>Kainouch<span>Cars</span></p>
+                </div>
+                <ul>
+                    <li><a href="/home">ACCUEIL</a> </li>
+                    <li><a href="/Galerie">GALLERY</a> </li>
+                    <li><a href="/reservations">RESERVATIONS</a> </li>
+                </ul>
+                <button onclick="window.location.href='/inscription'">Se connecter/S’inscrire</button>
+            </div>
+    </nav>
+    <header>
+        <div>RESERVATIONS</div>
+    </header>
+    <div class="container">
+        <%for(var i of entreprise){%>
+            <div class="reservation">
+                <form action="">
+                    <div class="info">
+                        <div class="fullName">
+                            <div class="output">Prénom : <Span id="firstNameC"><%=i.Prenom%></Span></div>
+                            <div class="output">Nom : <Span id="lastNameC"><%=i.Nom%></Span></div>
+                        </div>
+                        <div class="birthdayC">
+                            <div class="output">age : <Span id="ageC"><%=i.Age%></Span></div>
+                            <div class="numDeJours output">
+                                Nombre de jours : <Span id="daysC"><%=i.jours%></Span>
+                            </div>
+                        </div>
+                        <div class="city">
+                            <div class="output">
+                                départ : <Span id="fromCityC"><%=i.Depart%></Span>                    
+                            </div>
+                            <div class="output">
+                                retour : <Span id="toCityC"><%=i.Retour%></Span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="btns">
+                        <button id="modifyBtn" type="button" onclick="reservationModifyBtn()">MODIFIER</button>
+                        <button id="deletBtn" type="submit" onclick="reservationDeletBtn()">SUPPRIMER</button>
+                    </div>
+                    
+                </form>
+            </div>
+                <%}%>
+    </div>
+    <div class="modification" id="modification">
+        <form action="/modifier" method="POST">
+            <div class="fullName">
+                <div class="output">Voter Prénom est : <input type="text" name="Prenom" id="firstNameC"></input></div>
+                <div class="output">Votre Nom est : <input type="text" name="Nom" id="lastNameC" ></input></div>
+            </div>
+            <div class="birthdayC">
+                <div class="output">Votre Date de naissance est :<input type="text" name="naissance" id="birthDayC" > </div>                            
+                <div class="output">Votre age est : <input type="text" name="Age" id="ageC" ></div>
+            </div>
+            <div class="city">
+                <div class="output">
+                    Ville, gare ou aéroport de départ est : <input type="text" name="Depart" id="fromCityC" >               
+                </div>
+                <div class="output">
+                    Ville, gare ou aéroport de retour est : <input type="text" name="Retour" id="toCityC" >
+                </div>
+            </div>
+            <div class="DateDePrise">
+                <div class="output">
+                    Date de prise en charge est : <input type="text" name="dateCharge" id="startDateC" >
+                </div>
+                <div class="output">
+                    Heure de prise en charge est : <input type="text" name="heureCharge" id="startHourC" >
+                </div>
+            </div>
+            <div class="DateDeRetour">
+                <div class="output">
+                    Date de retour est : <input type="text" name="dateRetour" id="endDateC" >
+                </div>
+                <div class="output">
+                    Heure de retour est : <input type="text" name="heureRetour" id="endHourC" >
+                </div>
+            </div>
+            <div class="numDeJours output">
+                Nombre de jours : <input type="text" name="jours" id="daysC" >
+            </div>
+            <div class="btns">
+                <button id="modifyBtn" type="button" onclick="ModifyBtn()">MODIFIER</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="../public/js/resrevations.js"></script>
+</body>
+</html>

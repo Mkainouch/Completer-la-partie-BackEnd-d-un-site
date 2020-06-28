@@ -1,0 +1,353 @@
+@import "_nav&footer";
+section{
+    background-color: $mainColor;
+    padding-bottom: 3px;
+    .container{
+        background-color: white;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        @media #{$maxMobile} {
+            width: 100%;
+            margin: auto;
+            padding: 120px 0;
+
+        }
+        @media #{$minSmall} {
+            width: 70%;
+            padding: 120px 8px;
+            margin: auto;
+        }
+        @media #{$minMedium} {
+            width: 80%;
+            padding: 120px 56px;
+            margin: 0 auto;        
+        }
+        @media #{$minLarge} {
+            width: 920px;
+            }
+        .title{
+            margin-bottom: 56px;
+            font-size: 32px;
+        }
+        input{
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid $liteBrown;
+            border-radius: 4px;
+            padding-left: 3px;
+        }
+
+        form{
+            @media #{$maxMobile} {
+                width: 90%;
+                margin: auto;
+            }
+            @media #{$minSmall} {
+                width: 100%;
+                margin: auto;
+            }
+            @media #{$minMedium} {
+                
+            }
+            @media #{$minLarge} {
+                width: 100%;
+            }
+            h3{
+                color: $mainColor;
+                margin: 32px 0 24px 0;
+            }
+            .fullName{
+                display: flex;
+                justify-content: space-between;
+                .prenom{
+                    width: 48%;
+                    margin: 8px 0;
+                    div{
+                        padding: 8px;
+                    }
+                    @media #{$maxMobile} {
+                        width: 100%;                    
+                    }
+                }
+                .nom{
+                    width: 48%;
+                    margin: 8px 0;
+                    div{
+                        padding: 8px;
+                    }
+                    @media #{$maxMobile} {
+                        width: 100%;                    
+                    }
+                }
+                @media #{$maxMobile} {
+                    display: block;
+                }
+                
+            }
+            .email{
+                margin: 8px 0;
+                div{
+                    padding: 8px;
+                }
+            }
+            .confEmail{
+                margin: 8px 0;
+                div{
+                    padding: 8px;
+                }
+            }
+            .password{
+                margin: 8px 0;
+                div{
+                    padding: 8px;
+                }
+            }
+            .confPassword{
+                margin: 8px 0;
+                div{
+                    padding: 8px;
+                }
+            }
+            .phon{
+                margin: 8px 0;
+                div{
+                    padding: 8px;
+                }
+            }
+            .dateLabel{
+                margin-left: 8px;
+            }
+            .birthday{
+                display: flex;
+                justify-content: space-between;
+                .year{
+                    width: 30%;
+                    margin: 8px 0;
+                    div{
+                        padding: 8px;
+                    }
+                    @media #{$maxMobile} {
+                        width: 100%;                    
+                    }
+                }
+                .month{
+                    width: 30%;
+                    margin: 8px 0;
+                    div{
+                        padding: 8px;
+                    }
+                    @media #{$maxMobile} {
+                        width: 100%;                    
+                    }
+                }
+                .day{
+                    width: 30%;
+                    margin: 8px 0;
+                    div{
+                        padding: 8px;
+                    }
+                    @media #{$maxMobile} {
+                        width: 100%;                    
+                    }
+                }
+                select{
+                    width: 100%;
+                    border: none;
+                    border-bottom: 2px solid $liteBrown;
+                    border-radius: 4px;
+                }
+                @media #{$maxMobile} {
+                    display: block;                    
+                }
+            }
+            .permis{
+                margin: 8px 0;
+                div{
+                    padding: 8px;
+                }
+            }
+            .country{
+                margin: 8px 0;
+                div{
+                    padding: 8px;
+                }
+                select{
+                    width: 100%;
+                    border: none;
+                    border-bottom: 2px solid $liteBrown;
+                    border-radius: 4px;
+                }
+            }
+            .emission{
+                display: flex;
+                justify-content: space-between;
+                .anneeD{
+                    width: 30%;
+                    margin: 8px 0;
+                    div{
+                        padding: 8px;
+                    }
+                    select{
+                        width: 100%;
+                        border: none;
+                        border-bottom: 2px solid $liteBrown;
+                        border-radius: 4px;
+                    }
+                    @media #{$maxMobile} {
+                        width: 100%;                    
+                    }
+                }
+                .moisD{
+                    width: 30%;
+                    margin: 8px 0;
+                    div{
+                        padding: 8px;
+                    }
+                    select{
+                        width: 100%;
+                        border: none;
+                        border-bottom: 2px solid $liteBrown;
+                        border-radius: 4px;
+                    }
+                    @media #{$maxMobile} {
+                        width: 100%;                    
+                    }
+                }
+                .jourD{
+                    width: 30%;
+                    margin: 8px 0;
+                    div{
+                        padding: 8px;
+                    }
+                    select{
+                        width: 100%;
+                        border: none;
+                        border-bottom: 2px solid $liteBrown;
+                        border-radius: 4px;
+                    }
+                    @media #{$maxMobile} {
+                        width: 100%;                    
+                    }
+                }
+                @media #{$maxMobile} {
+                    display: block;
+                }
+            }
+            .carteCredit{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                .typeCarte{
+                    width: 48%;
+                    margin: 8px 0;
+                    div{
+                        padding: 8px;
+                    }
+                    select{
+                        width: 100%;
+                        border: none;
+                        border-bottom: 2px solid $liteBrown;
+                        border-radius: 4px;
+                    }
+                    @media #{$maxMobile} {
+                        width: 100%;                    
+                    }
+                }
+                .numeroCarte{
+                    width: 48%;
+                    margin: 8px 0;
+                    div{
+                        padding: 8px;
+                    }
+                    @media #{$maxMobile} {
+                        width: 100%;                    
+                    }
+                }
+                @media #{$maxMobile} {
+                    display: block;                    
+                }
+            }
+            .dateCarte{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                .moisCarte{
+                    margin: 8px 0;
+                    width: 48%;
+                    div{
+                        padding: 8px;
+                    }
+                    select{
+                        width: 100%;
+                        border: none;
+                        border-bottom: 2px solid $liteBrown;
+                        border-radius: 4px;
+                    }
+                    @media #{$maxMobile} {
+                        width: 100%;                    
+                    }
+                }
+                .anneeCarte{
+                    margin: 8px 0;
+                    width: 48%;
+                    div{
+                        padding: 8px;
+                    }
+                    select{
+                        width: 100%;
+                        border: none;
+                        border-bottom: 2px solid $liteBrown;
+                        border-radius: 4px;
+                    }
+                    @media #{$maxMobile} {
+                        width: 100%;                    
+                    }
+                }
+                @media #{$maxMobile} {
+                    display: block;
+                }
+            }
+            .adresse{
+                margin: 8px 0;
+                div{
+                    padding: 8px;
+                }
+            }
+            .ville{
+                margin: 8px 0;
+                div{
+                    padding: 8px;
+                }
+            }
+            .pays{
+                margin: 8px 0;
+                div{
+                    padding: 8px;
+                }
+            }
+            .codePostal{
+                margin: 8px 0;
+                div{
+                    padding: 8px;
+                }
+            }
+            .conditions{
+                display: flex;
+                input{
+                    width: max-content;
+                    margin: 0 8px;
+                }
+            }
+            .enregistrerbtn{
+                margin-top: 56px;
+                #registerBtn{
+                    @extend %buttonStyle;
+                    width: max-content;
+                }
+            }
+        }
+    }
+
+}
+
+

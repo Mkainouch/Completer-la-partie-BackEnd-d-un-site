@@ -1,0 +1,899 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#topNav button, footer .contact .leftDiv div button, section .container form .enregistrerbtn #registerBtn {
+  padding: 5px 12px;
+  font-size: 18px;
+  background-color: #A98B69;
+  border-radius: 2px;
+  border: 2px solid #A98B69;
+  color: #fff;
+  font-family: "Playfair" Display;
+}
+
+#topNav button:hover, footer .contact .leftDiv div button:hover, section .container form .enregistrerbtn #registerBtn:hover {
+  color: #A98B69;
+  background-color: #fff;
+  border: 2px solid #A98B69;
+}
+
+#topNav .logo {
+  height: 50px;
+  color: #fff;
+  font-family: "Merienda One", cursive;
+  font-size: 24px;
+  padding: 12px 0 0 24px;
+}
+
+#topNav .logo span {
+  font-family: "Roboto", sans-serif;
+  color: #A98B69;
+  font-weight: bold;
+}
+
+#checkNav {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  #checkNav:checked ~ #topNav {
+    display: block;
+  }
+  #checkNav:checked ~ #checkNavBtn {
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
+  }
+}
+
+#checkNavBtn {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  #checkNavBtn {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    background-color: #000;
+    border-bottom: 3px solid #A98B69;
+    z-index: 50;
+  }
+}
+
+#checkNavBtn img {
+  margin: 24px 0 24px 24px;
+}
+
+#topNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  border-bottom: 3px solid #A98B69;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  #topNav {
+    display: none;
+    text-align: center;
+    padding: 72px 0 32px 0;
+    width: 70%;
+    border-right: 3px solid #A98B69;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+}
+
+@media (max-width: 767px) {
+  #topNav .logo {
+    background-color: black;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+}
+
+#topNav ul {
+  list-style: none;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 24px 0;
+}
+
+@media (max-width: 767px) {
+  #topNav ul {
+    display: block;
+    padding: 32px 0 0 0;
+  }
+}
+
+#topNav ul li {
+  margin-right: 15%;
+}
+
+#topNav ul li a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: bold;
+}
+
+#topNav ul li a:hover {
+  color: #A98B69;
+}
+
+@media (max-width: 767px) {
+  #topNav ul li {
+    margin: 0 0 24px 0;
+  }
+}
+
+#topNav button {
+  border: #000;
+  background-color: black;
+}
+
+#topNav button:hover {
+  color: #fff;
+  background-color: #A98B69;
+  border: none;
+}
+
+.sideNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  margin-top: 200px;
+  z-index: 10;
+}
+
+.sideNav .themeContainer {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-left: none;
+  border-radius: 4px;
+  padding: 8px;
+  display: none;
+}
+
+.sideNav .themeContainer .theme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 8px;
+}
+
+.sideNav .themeContainer .theme .color {
+  height: 32px;
+  width: 120px;
+  border: 2px solid #A98B69;
+  border-radius: 4px;
+  margin-right: 4px;
+}
+
+.sideNav .themeContainer .theme .del {
+  height: 32px;
+  width: 32px;
+  background-color: #fff;
+  border: 2px solid #A98B69;
+  border-radius: 4px;
+}
+
+.sideNav .themeContainer .theme .del .moins {
+  height: 4px;
+  width: 12px;
+  background-color: #000;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 30%;
+}
+
+.sideNav .themeContainer .theme input {
+  margin-right: 4px;
+  font-size: 16px;
+  border: 2px solid #A98B69;
+}
+
+.sideNav .themeContainer .theme .add {
+  height: 32px;
+  width: 32px;
+  background-color: #fff;
+  border: 2px solid #A98B69;
+  border-radius: 4px;
+}
+
+.sideNav .themeContainer .theme .plus1 {
+  height: 4px;
+  width: 12px;
+  background-color: #000;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 30%;
+}
+
+.sideNav .themeContainer .theme .plus2 {
+  height: 12px;
+  width: 4px;
+  background-color: #000;
+  position: relative;
+  top: 37%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 42.5%;
+}
+
+.sideNav .themeContainer .theme #color1 {
+  background-color: #16a085;
+}
+
+.sideNav .themeContainer .theme #color2 {
+  background-color: #2980b9;
+}
+
+.sideNav .themeContainer .theme #color3 {
+  background-color: #c0392b;
+}
+
+.sideNav .themeContainer .theme #color4 {
+  background-color: #f39c12;
+}
+
+.sideNav .clickable {
+  height: 120px;
+  width: 8px;
+  background-color: #000;
+  border: 2px solid #fff;
+  border-left: none;
+  border-radius: 4px;
+}
+
+.sideNav .clickable:hover {
+  width: 24px;
+}
+
+.sideNav .color {
+  height: 32px;
+  width: 130px;
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 0 0 24px 0;
+}
+
+footer .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 40px 10% 40px 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18px;
+}
+
+footer .contact .leftDiv {
+  width: 70%;
+}
+
+footer .contact .leftDiv div {
+  padding: 8px 0 8px 0;
+}
+
+footer .contact .leftDiv div input {
+  padding: 5px 12px;
+  font-family: "Playfair" Display;
+  font-size: 18px;
+  border: none;
+}
+
+@media (max-width: 767px) {
+  footer .contact .leftDiv {
+    width: 100%;
+  }
+}
+
+footer .contact .rightDiv {
+  padding: 8px 0 8px 16px;
+}
+
+footer .contact .rightDiv div {
+  padding: 8px 0;
+}
+
+footer .contact .rightDiv ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+footer .contact .rightDiv ul li {
+  padding-left: 8px;
+}
+
+footer .contact .rightDiv ul li img {
+  height: 30px;
+  width: 30px;
+}
+
+@media (max-width: 767px) {
+  footer .contact .rightDiv {
+    width: 100%;
+    padding: 16px 0 8px 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  footer .contact {
+    display: block;
+  }
+}
+
+footer .links {
+  padding: 16px 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+}
+
+footer .links div a {
+  text-decoration: none;
+  color: #000;
+}
+
+footer .links div a:hover {
+  color: #A98B69;
+}
+
+footer .footerButtom {
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer .footerButtom p {
+  font-size: 12px;
+}
+
+section {
+  background-color: #A98B69;
+  padding-bottom: 3px;
+}
+
+section .container {
+  background-color: white;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+@media (max-width: 767px) {
+  section .container {
+    width: 100%;
+    margin: auto;
+    padding: 120px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  section .container {
+    width: 70%;
+    padding: 120px 8px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 991px) {
+  section .container {
+    width: 80%;
+    padding: 120px 56px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  section .container {
+    width: 920px;
+  }
+}
+
+section .container .title {
+  margin-bottom: 56px;
+  font-size: 32px;
+}
+
+section .container input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #cbb9a5;
+  border-radius: 4px;
+  padding-left: 3px;
+}
+
+@media (max-width: 767px) {
+  section .container form {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  section .container form {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  section .container form {
+    width: 100%;
+  }
+}
+
+section .container form h3 {
+  color: #A98B69;
+  margin: 32px 0 24px 0;
+}
+
+section .container form .fullName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section .container form .fullName .prenom {
+  width: 48%;
+  margin: 8px 0;
+}
+
+section .container form .fullName .prenom div {
+  padding: 8px;
+}
+
+@media (max-width: 767px) {
+  section .container form .fullName .prenom {
+    width: 100%;
+  }
+}
+
+section .container form .fullName .nom {
+  width: 48%;
+  margin: 8px 0;
+}
+
+section .container form .fullName .nom div {
+  padding: 8px;
+}
+
+@media (max-width: 767px) {
+  section .container form .fullName .nom {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  section .container form .fullName {
+    display: block;
+  }
+}
+
+section .container form .email {
+  margin: 8px 0;
+}
+
+section .container form .email div {
+  padding: 8px;
+}
+
+section .container form .confEmail {
+  margin: 8px 0;
+}
+
+section .container form .confEmail div {
+  padding: 8px;
+}
+
+section .container form .password {
+  margin: 8px 0;
+}
+
+section .container form .password div {
+  padding: 8px;
+}
+
+section .container form .confPassword {
+  margin: 8px 0;
+}
+
+section .container form .confPassword div {
+  padding: 8px;
+}
+
+section .container form .phon {
+  margin: 8px 0;
+}
+
+section .container form .phon div {
+  padding: 8px;
+}
+
+section .container form .dateLabel {
+  margin-left: 8px;
+}
+
+section .container form .birthday {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section .container form .birthday .year {
+  width: 30%;
+  margin: 8px 0;
+}
+
+section .container form .birthday .year div {
+  padding: 8px;
+}
+
+@media (max-width: 767px) {
+  section .container form .birthday .year {
+    width: 100%;
+  }
+}
+
+section .container form .birthday .month {
+  width: 30%;
+  margin: 8px 0;
+}
+
+section .container form .birthday .month div {
+  padding: 8px;
+}
+
+@media (max-width: 767px) {
+  section .container form .birthday .month {
+    width: 100%;
+  }
+}
+
+section .container form .birthday .day {
+  width: 30%;
+  margin: 8px 0;
+}
+
+section .container form .birthday .day div {
+  padding: 8px;
+}
+
+@media (max-width: 767px) {
+  section .container form .birthday .day {
+    width: 100%;
+  }
+}
+
+section .container form .birthday select {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #cbb9a5;
+  border-radius: 4px;
+}
+
+@media (max-width: 767px) {
+  section .container form .birthday {
+    display: block;
+  }
+}
+
+section .container form .permis {
+  margin: 8px 0;
+}
+
+section .container form .permis div {
+  padding: 8px;
+}
+
+section .container form .country {
+  margin: 8px 0;
+}
+
+section .container form .country div {
+  padding: 8px;
+}
+
+section .container form .country select {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #cbb9a5;
+  border-radius: 4px;
+}
+
+section .container form .emission {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section .container form .emission .anneeD {
+  width: 30%;
+  margin: 8px 0;
+}
+
+section .container form .emission .anneeD div {
+  padding: 8px;
+}
+
+section .container form .emission .anneeD select {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #cbb9a5;
+  border-radius: 4px;
+}
+
+@media (max-width: 767px) {
+  section .container form .emission .anneeD {
+    width: 100%;
+  }
+}
+
+section .container form .emission .moisD {
+  width: 30%;
+  margin: 8px 0;
+}
+
+section .container form .emission .moisD div {
+  padding: 8px;
+}
+
+section .container form .emission .moisD select {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #cbb9a5;
+  border-radius: 4px;
+}
+
+@media (max-width: 767px) {
+  section .container form .emission .moisD {
+    width: 100%;
+  }
+}
+
+section .container form .emission .jourD {
+  width: 30%;
+  margin: 8px 0;
+}
+
+section .container form .emission .jourD div {
+  padding: 8px;
+}
+
+section .container form .emission .jourD select {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #cbb9a5;
+  border-radius: 4px;
+}
+
+@media (max-width: 767px) {
+  section .container form .emission .jourD {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  section .container form .emission {
+    display: block;
+  }
+}
+
+section .container form .carteCredit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section .container form .carteCredit .typeCarte {
+  width: 48%;
+  margin: 8px 0;
+}
+
+section .container form .carteCredit .typeCarte div {
+  padding: 8px;
+}
+
+section .container form .carteCredit .typeCarte select {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #cbb9a5;
+  border-radius: 4px;
+}
+
+@media (max-width: 767px) {
+  section .container form .carteCredit .typeCarte {
+    width: 100%;
+  }
+}
+
+section .container form .carteCredit .numeroCarte {
+  width: 48%;
+  margin: 8px 0;
+}
+
+section .container form .carteCredit .numeroCarte div {
+  padding: 8px;
+}
+
+@media (max-width: 767px) {
+  section .container form .carteCredit .numeroCarte {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  section .container form .carteCredit {
+    display: block;
+  }
+}
+
+section .container form .dateCarte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section .container form .dateCarte .moisCarte {
+  margin: 8px 0;
+  width: 48%;
+}
+
+section .container form .dateCarte .moisCarte div {
+  padding: 8px;
+}
+
+section .container form .dateCarte .moisCarte select {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #cbb9a5;
+  border-radius: 4px;
+}
+
+@media (max-width: 767px) {
+  section .container form .dateCarte .moisCarte {
+    width: 100%;
+  }
+}
+
+section .container form .dateCarte .anneeCarte {
+  margin: 8px 0;
+  width: 48%;
+}
+
+section .container form .dateCarte .anneeCarte div {
+  padding: 8px;
+}
+
+section .container form .dateCarte .anneeCarte select {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #cbb9a5;
+  border-radius: 4px;
+}
+
+@media (max-width: 767px) {
+  section .container form .dateCarte .anneeCarte {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  section .container form .dateCarte {
+    display: block;
+  }
+}
+
+section .container form .adresse {
+  margin: 8px 0;
+}
+
+section .container form .adresse div {
+  padding: 8px;
+}
+
+section .container form .ville {
+  margin: 8px 0;
+}
+
+section .container form .ville div {
+  padding: 8px;
+}
+
+section .container form .pays {
+  margin: 8px 0;
+}
+
+section .container form .pays div {
+  padding: 8px;
+}
+
+section .container form .codePostal {
+  margin: 8px 0;
+}
+
+section .container form .codePostal div {
+  padding: 8px;
+}
+
+section .container form .conditions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section .container form .conditions input {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 8px;
+}
+
+section .container form .enregistrerbtn {
+  margin-top: 56px;
+}
+
+section .container form .enregistrerbtn #registerBtn {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+/*# sourceMappingURL=inscription.css.map */

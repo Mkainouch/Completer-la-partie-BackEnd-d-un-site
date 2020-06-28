@@ -1,0 +1,385 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/gallery.css">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Merienda+One|Shojumaru&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display|Merienda+One|Roboto&display=swap" rel="stylesheet">    
+    <title>KainouchCars</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="checkNav">
+        <label id="checkNavBtn" for="checkNav"><img src="../icons/iconMenu.png" alt="" width="24px"></label>
+        <div id="topNav">
+                <div class="logo">
+                <p>Kainouch<span>Cars</span></p>
+                </div>
+                <ul>
+                    <li><a href="/home">ACCUEIL</a> </li>
+                    <li><a href="/Galerie">GALLERY</a> </li>
+                    <li><a href="/reservations">RESERVATIONS</a> </li>
+                </ul>
+                <button onclick="window.location.href='/inscription'">Se connecter/S’inscrire</button>
+            </div>
+    </nav>
+    
+
+    <section>
+        <div class="header" id="header">
+            <h3>DON'T DREAM IT, DRIVE IT!</h3>
+        </div>
+        <div class="gallery" id="gallery">
+            <div class="filter">
+                    <!-- <div>41 OFFERS</div>
+                    <div>VEHICLE TYPE</div>
+                    <div>NO. OF SEATS 5</div> -->
+            </div>
+            
+            <div>
+                <div id="img1" class="carCart Cabrio" onclick="SlideImg('../imgs/CabrioCars/bmw-4er/img')">
+                    <div>
+                        <span>BMW 4 SERIES CONVERTIBLE</span>
+                        <p>or similar | Convertible (LTAR)</p>
+                    </div>
+                    <div><img src="../imgs/CabrioCars/bmw-4er/bmw0.png" alt=""></div>
+                </div>
+                <div class="carCart Cabrio" onclick="SlideImg('../imgs/CabrioCars/buick-cascada/img')">
+                    <div>
+                        <span>BUICK CASCADA CONVERTIBLE</span>
+                        <p>or similar | Convertible (ITAR)</p>
+                    </div>
+                    <div><img src="../imgs/CabrioCars/buick-cascada/buick-cascada-cabrio-4d-blau-offen-2016.png"></div>
+                </div>
+            
+                <div class="carCart Cabrio" onclick="SlideImg('../imgs/CabrioCars/ford-mustang/img')">
+                    <div>
+                        <span>FORD MUSTANG CONVERTIBLE</span>
+                    <p>or similar | Convertible (STAR)</p>
+                    </div>
+                    <div><img src="../imgs/CabrioCars/ford-mustang/ford-mustang-cabrio-2d-rot-geschl-2016.png" alt=""></div>
+                </div>
+                <div class="carCart Cabrio" onclick="SlideImg('../imgs/CabrioCars/ford-mustang-cabrio/img')">
+                   <div>
+                    <span>FORD MUSTANG GT CONVERTIBLE</span>
+                    <p>Guaranteed Model | (Ford Mustang GT Convertible)</p>
+                   </div>
+                    <div><img src="../imgs/CabrioCars/ford-mustang-cabrio/ford-mustang-cabrio-rot-offen-2017.png" alt=""></div>
+                </div>
+                
+                <div class="carCart Sedan" onclick="SlideImg()">
+                    <div>
+                        <span>BMW 3 SERIES</span>
+                        <p>or similar | Sedan (LCAR)</p>
+                    </div>
+                    <div><img src="../imgs/Sedan/bmw-3er/bmw-3er-4d-blau-2019.png" alt=""></div>
+                </div>
+                
+                <div class="carCart Sedan" onclick="SlideImg()">
+                    <div>
+                        <span>BMW 7 SERIES</span>
+                    <p>or similar | Sedan (XDAR)</p>
+                    </div>
+                    <div><img src="../imgs/Sedan/bmw-7er/bmw-7er-4d-grau-2019.png" alt=""></div>
+                </div>
+                
+                <div class="carCart Sedan" onclick="SlideImg()">
+                    <div>
+                        <span>CHRYSLER 300</span>
+                    <p>or similar | Sedan (FCAR)</p>
+                    </div>
+                    <div><img src="../imgs/Sedan/chrysler-300/chrysler-300-4d-weiss-2019.png" alt=""></div>
+                </div>
+                
+                <div class="carCart Sedan" onclick="SlideImg()">
+                    <div>
+                        <span>MERCEDES-BENZ CLA</span>
+                    <p>or similar | Sedan (PCAR)</p>
+                    </div>
+                    <div><img src="../imgs/Sedan/mb-cla-4d-weiss-2018.png" alt=""></div>
+                </div>
+                
+                <div class="carCart Sedan" onclick="SlideImg()">
+                    <div>
+                        <span>VOLKSWAGEN JETTA</span>
+                    <p>or similar | Sedan (SCAR)</p>
+                    </div>
+                    <div><img src="../imgs/Sedan/vw-jetta-4d-silber-2019.png" alt=""></div>
+                </div>
+                <div class="carCart SUV" onclick="SlideImg()">
+                    <div>
+                        <span>CHEVROLET EQUINOX</span>
+                    <p>or similar | SUV (IFAR)</p>
+                    </div>
+                    <div><img src="../imgs/SUV/chevrolet-equinox-5d-grau-2019_1.png" alt=""></div>
+                </div>
+                
+                <div class="carCart SUV" onclick="SlideImg()">
+                   <div>
+                    <span>JEEP RENEGADE</span>
+                    <p>or similar | SUV (CFAR)</p>
+                   </div>
+                    <div><img src="../imgs/SUV/jeep-renegade-5d-grau-2018.png" alt=""></div>
+                </div>
+                <div class="carCart SUV" onclick="SlideImg()">
+                    <div>
+                        <span>JEEP WRANGLER</span>
+                    <p>Guaranteed Model | (Jeep Wrangler)</p>
+                    </div>
+                    <div><img src="../imgs/SUV/jeep-wrangler-5d-braun-2018.png" alt=""></div>
+                </div>
+                
+                <div class="carCart SUV" onclick="SlideImg()">
+                    <div>
+                        <span>RANGE ROVER VELAR</span>
+                    <p>or similar | SUV (XFAR)</p>
+                    </div>
+                    <div><img src="../imgs/SUV/land-rover-range-rover-velar-5d-silber-2018.png" alt=""></div>
+                </div>
+                
+                <div class="carCart SUV" onclick="SlideImg()">
+                    <div>
+                        <span>MERCEDES-BENZ GLS</span>
+                    <p>or similar | SUV (XFAZ)</p>
+                    </div>
+                    <div><img src="../imgs/SUV/mb-gls-5d-weiss-2016.png" alt=""></div>
+                </div>
+                <div class="carCart VAN" onclick="SlideImg()">
+                    <div>
+                        <span>CHEVROLET EXPRESS</span>
+                    <p>or similar | Van (FVAR)</p>
+                    </div>
+                    <div><img src="../imgs/VAN/chevrolet-express-van-grau-2015.png" alt=""></div>
+                </div>
+                <div class="carCart Coupe" onclick="SlideImg()">
+                    <div>
+                        <span>DODGE CHARGER</span>
+                    <p>Guaranteed Model | (Dodge Charger)</p>
+                    </div>
+                    <div><img src="../imgs/Coupe/dodge-charger/dodge-charger-4d-rot-2019.png" alt=""></div>
+                </div>
+                <div class="carCart Coupe" onclick="SlideImg()">
+                    <div>
+                        <span>FORD MUSTANG SHELBY GT-S</span>
+                    <p>Guaranteed Model | (Ford Mustang Shelby GT-S)</p>
+                    </div>
+                    <div><img src="../imgs/Coupe/mustang-shelby/mustang-shelby-gt-2d-schwarz-2019.png" alt=""></div>
+                </div>
+                <div class="carCart Coupe" onclick="SlideImg()">
+                    <div>
+                        <span>TOYOTA TUNDRA</span>
+                    <p>or similar | Pickup (SPAR)</p>
+                    </div>
+                    <div><img src="../imgs/Pickup/toyota-tundra/toyota-tundra-dcab-blau-2019.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div id="s-r-container">
+            <div id="slideContainer">
+                <button onclick="hideSlider()">Close</button>
+                <div id="sildeShow">
+                    <div>
+                        <img src="../icons/baseline_arrow_back_ios_black_18dp.png" alt="back" id="back" onclick="slidePass(-1)">
+                        <img id="img2" src="../icons/baseline_arrow_forward_ios_black_18dp.png" alt="next" id="next" onclick="slidePass(1)">
+                    </div>
+                    <button id="RESERVATIONbtn" onclick="reservationForm()">RESERVATION</button>
+                </div>
+            </div>
+    
+            <div id="reservationContainer">
+                <button onclick="reservationClose()">Close</button>
+                <div class="reservation_form">
+                    <div id="imgs"></div>
+                    <form action="">
+                        <div class="fullName">
+                            <div class="prenom">
+                                <div>
+                                    <label for="">Prénom *</label>
+                                </div>
+                                <div>
+                                    <input type="text" id="firstName" name="Prénom" placeholder="" onkeyup="this.value = this.value.toUpperCase();">
+                                    <p id="firstNameP"></p>
+                                </div>
+                            </div>
+                            <div class="nom">
+                                <div>
+                                    <label for="">Nom *</label>
+                                </div>
+                                <div>
+                                    <input type="text" id="lastName" name="Nom" placeholder="" onkeyup="this.value = this.value.toUpperCase();">
+                                    <p id="lastNameP"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="birthday">
+                            <div>
+                                <label for="">Date de naissance *</label>
+                            </div>
+                            <div>
+                                <input type="date" id="birthDay" name="Date de naissance">
+                            </div>
+                        </div>
+                        <div class="city">
+                            <div class="">
+                                <div>
+                                    <label for="">Ville, gare ou aéroport de départ</label>                    
+                                </div>
+                                <div>
+                                    <input type="text" id="fromCity" name="Ville, gare ou aéroport de départ" onkeyup="this.value = this.value.toUpperCase();">
+                                </div>
+                            </div>
+                            <div class="">
+                                <div>
+                                    <label for="">Ville, gare ou aéroport de retour</label>
+                                </div>
+                                <div>
+                                    <input type="text" id="toCity" name="Ville, gare ou aéroport de retour" onkeyup="this.value = this.value.toUpperCase();">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="date">
+                            <div class="DateDePrise">
+                                <div>
+                                    <div>
+                                        <label for="">Date de prise en charge</label>
+                                    </div>
+                                    <div>
+                                        <input type="date" id="startDate" name="Date de prise en charge">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <label for="">Heure de prise en charge</label>
+                                    </div>
+                                    <div>
+                                        <input type="time" id="startHour" name="Heure de prise en charge">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="DateDeRetour">
+                                <div>
+                                    <div>
+                                        <label for="">Date de retour</label>
+                                    </div>
+                                    <div>
+                                        <input type="date" id="endDate" name="Date de retour">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <label for="">Heure de retour</label>
+                                    </div>
+                                    <div>
+                                        <input type="time" id="endHour" name="Heure de retour" >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <div>
+                                <button type="button" id="reservationConfBtn" onclick="reservationConf()">RESERVE</button>
+                            </div>                    
+                    </form>
+        
+                </div>
+               
+            </div>
+            <!-- ================================================ -->
+            <div id="reservationConfirmationContainer">
+                <div class="reservationConfirmtion_form">
+                    <h1>Veuillez vérifier que les informations que vous avez saisies sont correctes</h1>
+                    <div id="imgC" class="imgss"></div>
+                    <form action="/d" method="POST">
+                        <div class="fullName">
+                            <div class="output">Voter Prénom est : <input type="text" name="Prenom" id="firstNameC"></input></div>
+                            <div class="output">Votre Nom est : <input type="text" name="Nom" id="lastNameC" ></input></div>
+                        </div>
+                        <div class="birthdayC">
+                            <div class="output">Votre Date de naissance est :<input type="text" name="naissance" id="birthDayC" > </div>                            
+                            <div class="output">Votre age est : <input type="text" name="Age" id="ageC" ></div>
+                        </div>
+                        <div class="city">
+                            <div class="output">
+                                Ville, gare ou aéroport de départ est : <input type="text" name="Depart" id="fromCityC" >               
+                            </div>
+                            <div class="output">
+                                Ville, gare ou aéroport de retour est : <input type="text" name="Retour" id="toCityC" >
+                            </div>
+                        </div>
+                        <div class="DateDePrise">
+                            <div class="output">
+                                Date de prise en charge est : <input type="text" name="dateCharge" id="startDateC" >
+                            </div>
+                            <div class="output">
+                                Heure de prise en charge est : <input type="text" name="heureCharge" id="startHourC" >
+                            </div>
+                        </div>
+                        <div class="DateDeRetour">
+                            <div class="output">
+                                Date de retour est : <input type="text" name="dateRetour" id="endDateC" >
+                            </div>
+                            <div class="output">
+                                Heure de retour est : <input type="text" name="heureRetour" id="endHourC" >
+                            </div>
+                        </div>
+                        <div class="numDeJours output">
+                            Nombre de jours : <input type="text" name="jours" id="daysC" >
+                        </div>
+                        <div class="btns">
+                            <button id="modifyBtn" type="button" onclick="reservationModifyBtn()">MODIFIER</button>
+                            <button id="confirmationBtn" type="submit" onclick="reservationConfimationBtn()">CONFIRME</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div>
+            <div class="contact">
+                <div class="leftDiv">
+                    <div>
+                        <p>Inscrivez-vous pour bénéficier de bonnes affaires et de 15% de réduction sur votre prochaine location.</p>
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Addresse e-mail">
+                        <button>S'inscrire</button>
+                    </div>
+                </div>
+                <div class="rightDiv">
+                    <div>
+                        <p>Connect with Us</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><img src="../icons/Icon-twitter.png" alt="twitter"></li>
+                            <li><img src="../icons/Icon-facebook.png" alt="facebook"> </li>
+                            <li><img src="../icons/Icon-instagram.png" alt="instagram"></li>
+                            <li><img src="../icons/Icon-youtube.png" alt="youtube"> </li>
+                            <li><img src="../icons/Icon-google-plus.png" alt="google+"> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="links">
+                <div><a href="home.html">ACCUEIL</a></div>
+                <div><a href="gallery.html">GALLERY</a></div>
+                <div><a href="reservation.html">RESERVATION</a></div>
+            </div>
+            <div class="footerButtom">
+                <div>
+                    <p>KainouchCars Maroc - Safi </p>
+                </div>
+                <div>
+                    <p>Telephone : 1010110101</p>
+                </div>
+                <div>
+                    <p>© 2020 KainouchCars Corporation. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/galleryScript.js"></script>
+</body>
+</html>

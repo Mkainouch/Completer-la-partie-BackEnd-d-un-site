@@ -1,0 +1,1293 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#topNav button, footer .contact .leftDiv div button, #s-r-container #slideContainer #sildeShow button, #s-r-container #reservationContainer .reservation_form #reservationConfBtn, #reservationConfirmationContainer .reservationConfirmtion_form .btns #confirmationBtn, #reservationConfirmationContainer .reservationConfirmtion_form .btns #modifyBtn {
+  padding: 5px 12px;
+  font-size: 18px;
+  background-color: #A98B69;
+  border-radius: 2px;
+  border: 2px solid #A98B69;
+  color: #fff;
+  font-family: "Playfair" Display;
+}
+
+#topNav button:hover, footer .contact .leftDiv div button:hover, #s-r-container #slideContainer #sildeShow button:hover, #s-r-container #reservationContainer .reservation_form #reservationConfBtn:hover, #reservationConfirmationContainer .reservationConfirmtion_form .btns #confirmationBtn:hover, #reservationConfirmationContainer .reservationConfirmtion_form .btns #modifyBtn:hover {
+  color: #A98B69;
+  background-color: #fff;
+  border: 2px solid #A98B69;
+}
+
+#topNav .logo {
+  height: 50px;
+  color: #fff;
+  font-family: "Merienda One", cursive;
+  font-size: 24px;
+  padding: 12px 0 0 24px;
+}
+
+#topNav .logo span {
+  font-family: "Roboto", sans-serif;
+  color: #A98B69;
+  font-weight: bold;
+}
+
+#checkNav {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  #checkNav:checked ~ #topNav {
+    display: block;
+  }
+  #checkNav:checked ~ #checkNavBtn {
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
+  }
+}
+
+#checkNavBtn {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  #checkNavBtn {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    background-color: #000;
+    border-bottom: 3px solid #A98B69;
+    z-index: 50;
+  }
+}
+
+#checkNavBtn img {
+  margin: 24px 0 24px 24px;
+}
+
+#topNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  border-bottom: 3px solid #A98B69;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  #topNav {
+    display: none;
+    text-align: center;
+    padding: 72px 0 32px 0;
+    width: 70%;
+    border-right: 3px solid #A98B69;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+}
+
+@media (max-width: 767px) {
+  #topNav .logo {
+    background-color: black;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+}
+
+#topNav ul {
+  list-style: none;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 24px 0;
+}
+
+@media (max-width: 767px) {
+  #topNav ul {
+    display: block;
+    padding: 32px 0 0 0;
+  }
+}
+
+#topNav ul li {
+  margin-right: 15%;
+}
+
+#topNav ul li a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: bold;
+}
+
+#topNav ul li a:hover {
+  color: #A98B69;
+}
+
+@media (max-width: 767px) {
+  #topNav ul li {
+    margin: 0 0 24px 0;
+  }
+}
+
+#topNav button {
+  border: #000;
+  background-color: black;
+}
+
+#topNav button:hover {
+  color: #fff;
+  background-color: #A98B69;
+  border: none;
+}
+
+.sideNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  margin-top: 200px;
+  z-index: 10;
+}
+
+.sideNav .themeContainer {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-left: none;
+  border-radius: 4px;
+  padding: 8px;
+  display: none;
+}
+
+.sideNav .themeContainer .theme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 8px;
+}
+
+.sideNav .themeContainer .theme .color {
+  height: 32px;
+  width: 120px;
+  border: 2px solid #A98B69;
+  border-radius: 4px;
+  margin-right: 4px;
+}
+
+.sideNav .themeContainer .theme .del {
+  height: 32px;
+  width: 32px;
+  background-color: #fff;
+  border: 2px solid #A98B69;
+  border-radius: 4px;
+}
+
+.sideNav .themeContainer .theme .del .moins {
+  height: 4px;
+  width: 12px;
+  background-color: #000;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 30%;
+}
+
+.sideNav .themeContainer .theme input {
+  margin-right: 4px;
+  font-size: 16px;
+  border: 2px solid #A98B69;
+}
+
+.sideNav .themeContainer .theme .add {
+  height: 32px;
+  width: 32px;
+  background-color: #fff;
+  border: 2px solid #A98B69;
+  border-radius: 4px;
+}
+
+.sideNav .themeContainer .theme .plus1 {
+  height: 4px;
+  width: 12px;
+  background-color: #000;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 30%;
+}
+
+.sideNav .themeContainer .theme .plus2 {
+  height: 12px;
+  width: 4px;
+  background-color: #000;
+  position: relative;
+  top: 37%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 42.5%;
+}
+
+.sideNav .themeContainer .theme #color1 {
+  background-color: #16a085;
+}
+
+.sideNav .themeContainer .theme #color2 {
+  background-color: #2980b9;
+}
+
+.sideNav .themeContainer .theme #color3 {
+  background-color: #c0392b;
+}
+
+.sideNav .themeContainer .theme #color4 {
+  background-color: #f39c12;
+}
+
+.sideNav .clickable {
+  height: 120px;
+  width: 8px;
+  background-color: #000;
+  border: 2px solid #fff;
+  border-left: none;
+  border-radius: 4px;
+}
+
+.sideNav .clickable:hover {
+  width: 24px;
+}
+
+.sideNav .color {
+  height: 32px;
+  width: 130px;
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 0 0 24px 0;
+}
+
+footer .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 40px 10% 40px 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18px;
+}
+
+footer .contact .leftDiv {
+  width: 70%;
+}
+
+footer .contact .leftDiv div {
+  padding: 8px 0 8px 0;
+}
+
+footer .contact .leftDiv div input {
+  padding: 5px 12px;
+  font-family: "Playfair" Display;
+  font-size: 18px;
+  border: none;
+}
+
+@media (max-width: 767px) {
+  footer .contact .leftDiv {
+    width: 100%;
+  }
+}
+
+footer .contact .rightDiv {
+  padding: 8px 0 8px 16px;
+}
+
+footer .contact .rightDiv div {
+  padding: 8px 0;
+}
+
+footer .contact .rightDiv ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+footer .contact .rightDiv ul li {
+  padding-left: 8px;
+}
+
+footer .contact .rightDiv ul li img {
+  height: 30px;
+  width: 30px;
+}
+
+@media (max-width: 767px) {
+  footer .contact .rightDiv {
+    width: 100%;
+    padding: 16px 0 8px 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  footer .contact {
+    display: block;
+  }
+}
+
+footer .links {
+  padding: 16px 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+}
+
+footer .links div a {
+  text-decoration: none;
+  color: #000;
+}
+
+footer .links div a:hover {
+  color: #A98B69;
+}
+
+footer .footerButtom {
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer .footerButtom p {
+  font-size: 12px;
+}
+
+section {
+  padding-bottom: 200px;
+  background-color: #A98B69;
+}
+
+section .header {
+  height: 240px;
+  background-color: black;
+  margin: 0 7%;
+}
+
+@media (max-width: 400px) {
+  section .header {
+    height: 180px;
+  }
+}
+
+section .header h3 {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-size: 48px;
+  padding: 120px 0 0 32px;
+}
+
+@media (max-width: 400px) {
+  section .header h3 {
+    font-size: 32px;
+    padding: 84px 0 0 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  section .header h3 {
+    padding: 89px 0 0 32px;
+  }
+}
+
+section .gallery {
+  margin: 0px 7%;
+}
+
+section .gallery .filter {
+  height: 32px;
+  border-bottom: 1px solid #000;
+  margin-bottom: 16px;
+  padding: 0;
+}
+
+section .gallery .filter div {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 0 100px 0 32px;
+}
+
+section .gallery div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  padding: 24px 0;
+}
+
+section .gallery div div {
+  width: 400px;
+}
+
+section .gallery div div div {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+section .gallery div div div span {
+  font-family: "Roboto", sans-serif;
+  font-size: 20;
+  font-weight: bold;
+  color: #A98B69;
+  background: black;
+}
+
+section .gallery div div div p {
+  font-size: 16px;
+  padding: 8px 0 0 0;
+}
+
+section .gallery div div div {
+  width: 100%;
+  text-align: center;
+}
+
+section .gallery div div div img {
+  height: 160px;
+  width: 290px;
+  padding: 16px 0;
+}
+
+section .gallery div div:hover {
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+section .gallery div div:hover div {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+section .gallery div div:hover div {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+section .gallery div div:hover div img {
+  padding: 11px;
+  height: 170px;
+  width: 300px;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+}
+
+.homeSection {
+  height: 500px;
+}
+
+#s-r-container {
+  display: none;
+  position: absolute;
+  top: 70px;
+  height: 100%;
+  width: 100%;
+}
+
+#s-r-container #slideContainer {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-items: center;
+}
+
+#s-r-container #slideContainer button {
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  font-weight: bold;
+  border: 2px solid #A98B69;
+  border-radius: 12px;
+  padding: 2px 8px;
+  margin: 24px 0 0px 16px;
+}
+
+#s-r-container #slideContainer button:hover {
+  background-color: red;
+  border: 2px solid red;
+}
+
+#s-r-container #slideContainer #sildeShow {
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#s-r-container #slideContainer #sildeShow div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#s-r-container #slideContainer #sildeShow div #img2 {
+  position: absolute;
+  right: 0;
+}
+
+#s-r-container #slideContainer #sildeShow button {
+  font-size: 40px;
+  position: absolute;
+  right: 100px;
+  bottom: 150px;
+}
+
+@media (max-width: 767px) {
+  #s-r-container #slideContainer #sildeShow button {
+    font-size: 16;
+    right: 16px;
+    bottom: -16px;
+  }
+}
+
+@media (min-width: 768px) {
+  #s-r-container #slideContainer #sildeShow button {
+    font-size: 20px;
+    right: 24px;
+    bottom: 20px;
+  }
+}
+
+@media (min-width: 991px) {
+  #s-r-container #slideContainer #sildeShow button {
+    font-size: 24px;
+    right: 32px;
+    bottom: 32px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #s-r-container #slideContainer #sildeShow button {
+    font-size: 32px;
+    right: 50px;
+    bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  #s-r-container #slideContainer #sildeShow {
+    width: 100%;
+    height: 30%;
+    margin-top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    border: none;
+  }
+}
+
+@media (min-width: 768px) {
+  #s-r-container #slideContainer #sildeShow {
+    width: 100%;
+    height: 45%;
+    margin-top: 50%;
+    -webkit-transform: translateY(-80%);
+            transform: translateY(-80%);
+    border: none;
+  }
+}
+
+@media (min-width: 991px) {
+  #s-r-container #slideContainer #sildeShow {
+    width: 100%;
+    height: 60%;
+    margin-top: 50%;
+    -webkit-transform: translateY(-80%);
+            transform: translateY(-80%);
+  }
+}
+
+@media (min-width: 1200px) {
+  #s-r-container #slideContainer #sildeShow {
+    width: 96%;
+    height: 76%;
+    margin: 580px auto;
+  }
+}
+
+#s-r-container #reservationContainer {
+  display: none;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  justify-items: center;
+}
+
+#s-r-container #reservationContainer .reservation_form {
+  width: 1200px;
+  margin: 8px auto;
+}
+
+#s-r-container #reservationContainer .reservation_form #imgs {
+  width: 360px;
+  height: 200px;
+}
+
+@media (max-width: 400px) {
+  #s-r-container #reservationContainer .reservation_form #imgs {
+    width: 90%;
+    height: 160px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+}
+
+#s-r-container #reservationContainer .reservation_form input {
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  border-bottom: 2px solid #A98B69;
+  background-color: #fff;
+  border-radius: 4px;
+  width: 90%;
+}
+
+@media (min-width: 991px) {
+  #s-r-container #reservationContainer .reservation_form input {
+    width: 90%;
+  }
+}
+
+@media (max-width: 767px) {
+  #s-r-container #reservationContainer .reservation_form input {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
+
+#s-r-container #reservationContainer .reservation_form input:focus {
+  outline: none;
+}
+
+#s-r-container #reservationContainer .reservation_form .fullName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 16px;
+  width: 100%;
+}
+
+#s-r-container #reservationContainer .reservation_form .fullName div {
+  width: 50%;
+}
+
+@media (max-width: 767px) {
+  #s-r-container #reservationContainer .reservation_form .fullName div {
+    margin-bottom: 16px;
+    width: 90%;
+  }
+}
+
+#s-r-container #reservationContainer .reservation_form .fullName div div {
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+@media (max-width: 767px) {
+  #s-r-container #reservationContainer .reservation_form .fullName {
+    display: block;
+  }
+}
+
+#s-r-container #reservationContainer .reservation_form .birthday {
+  width: 100%;
+  margin: 16px;
+}
+
+#s-r-container #reservationContainer .reservation_form .birthday div {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  #s-r-container #reservationContainer .reservation_form .birthday {
+    width: 90%;
+    margin: 0 0 0 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  #s-r-container #reservationContainer .reservation_form .birthday input {
+    width: 95%;
+  }
+}
+
+#s-r-container #reservationContainer .reservation_form .city {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 16px;
+  width: 100%;
+}
+
+#s-r-container #reservationContainer .reservation_form .city div {
+  width: 50%;
+}
+
+#s-r-container #reservationContainer .reservation_form .city div div {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  #s-r-container #reservationContainer .reservation_form .city div div {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  #s-r-container #reservationContainer .reservation_form .city div {
+    width: 90%;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  #s-r-container #reservationContainer .reservation_form .city {
+    display: block;
+  }
+}
+
+#s-r-container #reservationContainer .reservation_form .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 16px;
+}
+
+#s-r-container #reservationContainer .reservation_form .date .DateDePrise {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#s-r-container #reservationContainer .reservation_form .date .DateDePrise div {
+  width: 50%;
+}
+
+#s-r-container #reservationContainer .reservation_form .date .DateDePrise div div {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  #s-r-container #reservationContainer .reservation_form .date .DateDePrise div div {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  #s-r-container #reservationContainer .reservation_form .date .DateDePrise div {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  #s-r-container #reservationContainer .reservation_form .date .DateDePrise {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  #s-r-container #reservationContainer .reservation_form .date .DateDePrise {
+    width: 100%;
+  }
+}
+
+#s-r-container #reservationContainer .reservation_form .date .dateDeRetour {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#s-r-container #reservationContainer .reservation_form .date .dateDeRetour div {
+  width: 50%;
+}
+
+#s-r-container #reservationContainer .reservation_form .date .dateDeRetour div div {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  #s-r-container #reservationContainer .reservation_form .date .dateDeRetour div div {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  #s-r-container #reservationContainer .reservation_form .date .dateDeRetour div {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  #s-r-container #reservationContainer .reservation_form .date .dateDeRetour {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  #s-r-container #reservationContainer .reservation_form .date .dateDeRetour {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  #s-r-container #reservationContainer .reservation_form .date {
+    width: 90%;
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  #s-r-container #reservationContainer .reservation_form .date {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (min-width: 991px) {
+  #s-r-container #reservationContainer .reservation_form .date {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  #s-r-container #reservationContainer .reservation_form .date {
+    width: 98%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+#s-r-container #reservationContainer .reservation_form .age {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px;
+  margin: 16px;
+}
+
+#s-r-container #reservationContainer .reservation_form .age div {
+  width: 50%;
+}
+
+#s-r-container #reservationContainer .reservation_form .age div div {
+  width: 100%;
+  padding: 8px;
+}
+
+#s-r-container #reservationContainer .reservation_form #reservationConfBtn {
+  font-size: 30px;
+  float: right;
+  margin-right: 32px;
+}
+
+@media (max-width: 767px) {
+  #s-r-container #reservationContainer .reservation_form #reservationConfBtn {
+    font-size: 24px;
+    margin-right: 24px;
+  }
+}
+
+@media (max-width: 400px) {
+  #s-r-container #reservationContainer .reservation_form #reservationConfBtn {
+    font-size: 16px;
+    margin-right: 16px;
+  }
+}
+
+#s-r-container #reservationContainer .reservation_form label {
+  font-size: 18px;
+  font-family: "Playfair" Display;
+}
+
+@media (max-width: 767px) {
+  #s-r-container #reservationContainer .reservation_form {
+    width: 90%;
+    padding-bottom: 150px;
+  }
+}
+
+@media (min-width: 768px) {
+  #s-r-container #reservationContainer .reservation_form {
+    width: 90%;
+  }
+}
+
+@media (min-width: 991px) {
+  #s-r-container #reservationContainer .reservation_form {
+    width: 94%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #s-r-container #reservationContainer .reservation_form {
+    width: 1200px;
+  }
+}
+
+#s-r-container #reservationContainer button {
+  color: #A98B69;
+  background-color: rgba(0, 0, 0, 0);
+  font-weight: bold;
+  border: 2px solid #A98B69;
+  border-radius: 12px;
+  padding: 2px 8px;
+  margin: 32px 0 0 16px;
+}
+
+#s-r-container #reservationContainer button:hover {
+  color: white;
+  background-color: red;
+  border: 2px solid red;
+}
+
+#reservationConfirmationContainer {
+  display: none;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+}
+
+#reservationConfirmationContainer .reservationConfirmtion_form {
+  margin: 8px auto;
+}
+
+#reservationConfirmationContainer .reservationConfirmtion_form h1 {
+  padding: 32px 0;
+}
+
+#reservationConfirmationContainer .reservationConfirmtion_form #imgC {
+  width: 360px;
+  height: 200px;
+}
+
+@media (max-width: 400px) {
+  #reservationConfirmationContainer .reservationConfirmtion_form #imgC {
+    width: 90%;
+    height: 160px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+}
+
+#reservationConfirmationContainer .reservationConfirmtion_form .output {
+  font-size: 18px;
+}
+
+#reservationConfirmationContainer .reservationConfirmtion_form .output input {
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  background-color: white;
+}
+
+#reservationConfirmationContainer .reservationConfirmtion_form .fullName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 16px;
+  width: 100%;
+}
+
+#reservationConfirmationContainer .reservationConfirmtion_form .fullName div {
+  width: 50%;
+}
+
+@media (max-width: 767px) {
+  #reservationConfirmationContainer .reservationConfirmtion_form .fullName div {
+    margin-bottom: 16px;
+    width: 90%;
+  }
+}
+
+#reservationConfirmationContainer .reservationConfirmtion_form .fullName div div {
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+@media (max-width: 767px) {
+  #reservationConfirmationContainer .reservationConfirmtion_form .fullName {
+    display: block;
+  }
+}
+
+#reservationConfirmationContainer .reservationConfirmtion_form .birthdayC {
+  width: 100%;
+  margin: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#reservationConfirmationContainer .reservationConfirmtion_form .birthdayC div {
+  width: 100%;
+}
+
+#reservationConfirmationContainer .reservationConfirmtion_form .birthdayC div {
+  width: 50%;
+}
+
+@media (max-width: 767px) {
+  #reservationConfirmationContainer .reservationConfirmtion_form .birthdayC div {
+    margin-bottom: 16px;
+    width: 90%;
+  }
+}
+
+#reservationConfirmationContainer .reservationConfirmtion_form .birthdayC div div {
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+@media (max-width: 767px) {
+  #reservationConfirmationContainer .reservationConfirmtion_form .birthdayC {
+    display: block;
+  }
+}
+
+#reservationConfirmationContainer .reservationConfirmtion_form .city {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 16px;
+  width: 100%;
+}
+
+#reservationConfirmationContainer .reservationConfirmtion_form .city div {
+  width: 50%;
+}
+
+#reservationConfirmationContainer .reservationConfirmtion_form .city div div {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  #reservationConfirmationContainer .reservationConfirmtion_form .city div div {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  #reservationConfirmationContainer .reservationConfirmtion_form .city div {
+    width: 90%;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  #reservationConfirmationContainer .reservationConfirmtion_form .city {
+    display: block;
+  }
+}
+
+#reservationConfirmationContainer .reservationConfirmtion_form .DateDePrise {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 16px;
+}
+
+#reservationConfirmationContainer .reservationConfirmtion_form .DateDePrise div {
+  width: 50%;
+}
+
+#reservationConfirmationContainer .reservationConfirmtion_form .DateDePrise div div {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  #reservationConfirmationContainer .reservationConfirmtion_form .DateDePrise div div {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  #reservationConfirmationContainer .reservationConfirmtion_form .DateDePrise div {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  #reservationConfirmationContainer .reservationConfirmtion_form .DateDePrise {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  #reservationConfirmationContainer .reservationConfirmtion_form .DateDePrise {
+    width: 100%;
+  }
+}
+
+#reservationConfirmationContainer .reservationConfirmtion_form .dateDeRetour {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 16px;
+}
+
+#reservationConfirmationContainer .reservationConfirmtion_form .dateDeRetour div {
+  width: 50%;
+}
+
+#reservationConfirmationContainer .reservationConfirmtion_form .dateDeRetour div div {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  #reservationConfirmationContainer .reservationConfirmtion_form .dateDeRetour div div {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  #reservationConfirmationContainer .reservationConfirmtion_form .dateDeRetour div {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  #reservationConfirmationContainer .reservationConfirmtion_form .dateDeRetour {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  #reservationConfirmationContainer .reservationConfirmtion_form .dateDeRetour {
+    width: 100%;
+  }
+}
+
+#reservationConfirmationContainer .reservationConfirmtion_form .numDeJours {
+  margin: 16px;
+  margin-bottom: 64px;
+}
+
+#reservationConfirmationContainer .reservationConfirmtion_form .btns {
+  margin: 16px;
+}
+
+#reservationConfirmationContainer .reservationConfirmtion_form .btns #confirmationBtn {
+  font-size: 24px;
+  float: right;
+  margin-right: 32px;
+}
+
+@media (max-width: 767px) {
+  #reservationConfirmationContainer .reservationConfirmtion_form .btns #confirmationBtn {
+    font-size: 24px;
+    margin-right: 24px;
+  }
+}
+
+@media (max-width: 400px) {
+  #reservationConfirmationContainer .reservationConfirmtion_form .btns #confirmationBtn {
+    font-size: 16px;
+    margin-right: 16px;
+  }
+}
+
+#reservationConfirmationContainer .reservationConfirmtion_form .btns #modifyBtn {
+  font-size: 24px;
+  margin-right: 32px;
+}
+
+@media (max-width: 767px) {
+  #reservationConfirmationContainer .reservationConfirmtion_form .btns #modifyBtn {
+    font-size: 24px;
+    margin-right: 24px;
+  }
+}
+
+@media (max-width: 400px) {
+  #reservationConfirmationContainer .reservationConfirmtion_form .btns #modifyBtn {
+    font-size: 16px;
+    margin-right: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  #reservationConfirmationContainer .reservationConfirmtion_form {
+    width: 90%;
+    padding-bottom: 150px;
+  }
+}
+
+@media (min-width: 768px) {
+  #reservationConfirmationContainer .reservationConfirmtion_form {
+    width: 90%;
+  }
+}
+
+@media (min-width: 991px) {
+  #reservationConfirmationContainer .reservationConfirmtion_form {
+    width: 94%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #reservationConfirmationContainer .reservationConfirmtion_form {
+    width: 1000px;
+  }
+}
+/*# sourceMappingURL=gallery.css.map */
